@@ -10,7 +10,8 @@ class Functions:
         2.1: self.__peerNuevo(),
         2.2: self.__peerListado(),
         3.1: self.__fileServidor(),
-        3.2: self.__fileUsuario()
+        3.2: self.__fileUsuario(),
+        4: self.__salir(),
         }
 
     def getOption(self, id) -> Number:
@@ -33,3 +34,6 @@ class Functions:
 
     def __fileUsuario (self) -> Number :
         return 3.2
+
+    def __salir (self) -> Number :
+        return 4

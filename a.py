@@ -11,9 +11,10 @@ def main ():
 
     while( opcion !=4 ):
         print("\033[H\033[3J", end="")
-        menu.headMenu()
-        response=menu.mainMenu(opcion)
-        
-        print(func.getOption(response))
 
+        print(func.getOption(opcion))
+
+        menu.headMenu()
+        opcion=menu.mainMenu(opcion)
+        
 main()
